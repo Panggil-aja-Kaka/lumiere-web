@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/style/style.css" />
+
+    <title>Lumiére</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Lumière</a>
+
+        <!-- nav__menu: hidden by default mobile, show via .show-menu (JS toggle) -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="/#home" class="nav__link">Home</a></li>
+            <li><a href="/#about" class="nav__link">About</a></li>
+            <li><a href="/#ingredients" class="nav__link">Ingredients</a></li>
+            <li><a href="/#products" class="nav__link">Products</a></li>
+            <li><a href="/#testimonial" class="nav__link">Testimoni</a></li>
+          </ul>
+
+          <ul class="nav__actions">
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" class="nav__link nav__action-ig"> <i class="ri-instagram-line"></i>Instagram </a>
+            </li>
+            <li>
+              <a href="https://shopee.co.id" target="_blank" class="nav__link nav__action-shop"> <i class="ri-shopping-bag-4-line"></i>Shoppee </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- nav__toggle: hamburger trigger, id for JS querySelector -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== MAIN PAGE ====================-->
+      <section class="blank-page">
+        <div class="page__container container">
+          <div class="page__data">
+            <span class="page__subtitle">Error 404</span>
+            <h1 class="page__title">Hey Buddy</h1>
+            <p class="page__description">
+              This website is just a personal project. <br />
+              So you won't find anything here. <br />
+              Please click the button below to return to the main page.
+            </p>
+            <a href="/index.html" class="page__button"> Go Home </a>
+          </div>
+
+          <div class="page__img">
+            <img src="../assets/img/blank-page/ghost-img.png" alt="ghost" />
+            <div class="page__shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== FOOTER ====================-->
+      <!-- =========== Footer Desktop only =========== -->
+      <footer class="footer footer-desktop" id="footer">
+        <div class="footer__container container grid">
+          <div class="footer__copyright">
+            <div class="footer__year">&#169; <span id="footer-year"></span></div>
+            <div class="footer__copy">Lumière. All Rights Reserved</div>
+          </div>
+          <div class="footer__menu" id="footer-menu">
+            <ul class="footer__list">
+              <li><a href="/#about" class="footer__link">About</a></li>
+              <li><a href="/#ingredients" class="footer__link">Ingredients</a></li>
+              <li><a href="/#products" class="footer__link">Products</a></li>
+              <li><a href="/#journal" class="footer__link">Journal</a></li>
+              <li><a href="/#contact" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <!-- =========== Footer Mobile only =========== -->
+      <footer class="footer-mobile" id="footer">
+        <div class="footer__container-mobile container grid">
+          <div class="footer__head">
+            <div class="footer__title">LUMIÈRE</div>
+            <p class="footer__description">Skincare minimalis dengan formula lembut untuk kulit yang over-treated.</p>
+            <div class="footer__icons">
+              <a class="footer-icons" href="https://www.instagram.com/">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a class="footer-icons" href="https://shopee.co.id">
+                <i class="ri-shopping-bag-4-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__menu-mobile" id="footer-menu">
+            <ul class="footer__list-mobile">
+              <li><a href="#" style="pointer-events: none" class="footer-span">Menu</a></li>
+              <li><a href="/#about" class="footer__link">About</a></li>
+              <li><a href="/#ingredients" class="footer__link">Ingredients</a></li>
+              <li><a href="/#products" class="footer__link">Products</a></li>
+              <li><a href="/#journal" class="footer__link">Journal</a></li>
+            </ul>
+            <ul class="footer__list-mobile">
+              <li><a href="#" style="pointer-events: none" class="footer-span">Support</a></li>
+              <li><a href="#" style="pointer-events: none" class="footer-help">FAQ</a></li>
+              <li><a href="#" style="pointer-events: none" class="footer-help">Contact</a></li>
+              <li><a href="#" style="pointer-events: none" class="footer-help">Privacy Policy</a></li>
+              <li><a href="#" style="pointer-events: none" class="footer-help">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__copyright-mobile">
+            <div class="footer-year-mobile">&#169; <span id="footer-year-mobile"></span></div>
+            <div class="footer-copy-mobile">Lumière. All Rights Reserved</div>
+          </div>
+        </div>
+      </footer>
+
+      <button class="scroll-top" id="scrollTop">
+        <i class="ri-arrow-up-line"></i>
+      </button>
+    </main>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="../assets/script/scrollreveal.min.js"></script>
+
+    <!--=============== ANIME JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/script/main.js"></script>
+    <!-- taruh sebelum </body> -->
+  </body>
+</html>

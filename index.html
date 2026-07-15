@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/style/style.css" />
+
+    <title>Lumiére</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Lumière</a>
+
+        <!-- nav__menu: hidden by default mobile, show via .show-menu (JS toggle) -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#ingredients" class="nav__link">Ingredients</a></li>
+            <li><a href="#products" class="nav__link">Products</a></li>
+            <li><a href="#testimonial" class="nav__link">Testimoni</a></li>
+          </ul>
+
+          <ul class="nav__actions">
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" class="nav__link nav__action-ig"> <i class="ri-instagram-line"></i>Instagram </a>
+            </li>
+            <li>
+              <a href="https://shopee.co.id" target="_blank" class="nav__link nav__action-shop"> <i class="ri-shopping-bag-4-line"></i>Shoppee </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- nav__toggle: hamburger trigger, id for JS querySelector -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <!-- Dekorative leaf, unstattic content -->
+        <div class="leaf-one" aria-hidden="true"></div>
+
+        <div class="home__container container grid">
+          <div class="home__content">
+            <h1 class="home__title">Skin yang <span>sehat</span> <br />gak perlu drama.</h1>
+            <p class="home__description">Skincare minimalis untuk kulit yang over-treated. Gentle, Effective & Honest</p>
+          </div>
+
+          <div class="home__cta">
+            <a href="https://shopee.co.id" class="home__btn">Kunjungi Shoppee <i class="ri-shopping-bag-4-line"></i></a>
+            <a href="https://www.instagram.com/" class="home__btn home__btn--ghost">Follow Instagram <i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Decorative SVG divider -->
+        <div class="home__divider">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+        </div>
+
+        <!-- Decorative Water drop -->
+        <div class="home__drops drops">
+          <!-- =========================================
+          ==> Change variale with property siblings
+              if more than one. 
+              exam(CSS): drop::nth-child(1,2,...) 
+          ========================================= -->
+          <div class="drop one"></div>
+          <div class="drop two"></div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <!-- Dekorative leaf, unstattic content -->
+        <div class="leaf-two" aria-hidden="true"></div>
+
+        <div class="about__container container grid">
+          <!-- Badge label section -->
+          <div class="about__badge badge">OUR APPROACH</div>
+
+          <div class="about__content">
+            <div class="about__text">
+              <h2 class="about__title">Balik ke <br />Kulit <span>Aslimu.</span></h2>
+              <p class="about__description">
+                Kulit yang over-treated butuh istirahat, bukan produk baru. Lumière membantu memperbaiki skin barrier dan mengembalikan keseimbangan kulit secara perlahan dan lembut
+              </p>
+              <a class="about__btn" href="#about">
+                Pelajari Pendekatan Kami
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
+            </div>
+
+            <div class="about__cards">
+              <!-- Card (01) -->
+              <div class="about__card">
+                <div class="about__card-img about__card-img--1">
+                  <img src="assets/img/about/01.webp" alt="over-treatment" />
+                </div>
+                <div class="about__card-content">
+                  <h3 class="about__card-number">01</h3>
+                  <h3 class="about__card-title">Over-Treatment</h3>
+                  <p class="about__card-description">Terlalu banyak bahan aktif dan layering yang membuat kulit lelah</p>
+                </div>
+              </div>
+
+              <!-- Card (02) -->
+              <div class="about__card">
+                <div class="about__card-img about__card-img--2">
+                  <img src="assets/img/about/02.webp" alt="barrier-broken" />
+                </div>
+                <div class="about__card-content">
+                  <h3 class="about__card-number">02</h3>
+                  <h3 class="about__card-title">Skin Barrier Rusak</h3>
+                  <p class="about__card-description">Kulit jadi sensitif, mudah merah, kering, dan berjerawat</p>
+                </div>
+              </div>
+
+              <!-- Card (03) -->
+              <div class="about__card">
+                <div class="about__card-img about__card-img--3">
+                  <img src="assets/img/about/03.webp" alt="repair-skin" />
+                </div>
+                <div class="about__card-content">
+                  <h3 class="about__card-number">03</h3>
+                  <h3 class="about__card-title">Perbaikan</h3>
+                  <p class="about__card-description">Formula lembut dengan Ingredient yang mendukung skin barrier</p>
+                </div>
+              </div>
+
+              <!-- Card (04) -->
+              <div class="about__card">
+                <div class="about__card-img about__card-img--4">
+                  <img src="assets/img/about/04.webp" alt="good-skin" />
+                </div>
+                <div class="about__card-content">
+                  <h3 class="about__card-number">04</h3>
+                  <h3 class="about__card-title">Kulit Sehat</h3>
+                  <p class="about__card-description">Kulit lebih tenang, lembab seimbang, dan glowing natural</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Paper divider -->
+        <div class="about__paper-div">
+          <img src="assets/img/decorative/special-background/paper-div.webp" alt="" class="about__paper" />
+        </div>
+      </section>
+
+      <!--==================== INGREDIENTS ====================-->
+      <section class="ingredients section" id="ingredients">
+        <!-- Dekorative leaf, unstattic content -->
+        <div class="leaf-three" aria-hidden="true"></div>
+        <div class="ingredients__container container grid">
+          <div class="ingredients__badge badge">TRANSPARENCY</div>
+
+          <div class="ingredients__content">
+            <div class="ingredients__text">
+              <h2 class="ingredients__title">Jujur dalam setiap formula</h2>
+              <p class="ingredients__description">Kami percaya kulit sehat berawal dari bahan yang aman, terbukti, dan sesuai kebutuhan kulitmu</p>
+              <a href="#ingredients" class="ingredients__btn">
+                Lihat Semua Ingredients
+                <i class="ri-arrow-right-long-line"></i>
+              </a>
+            </div>
+
+            <!-- MOBILE ONLY: Swiper slider -->
+            <div class="ing__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ing__slide">
+                  <div class="ing__card-drops drops">
+                    <div class="drop"></div>
+                  </div>
+                  <img src="assets/img/ingredients/mobile/ing-pathenol.webp" alt="Pathenol" class="ing__slide-img" />
+                  <h3 class="ing__slide-title">Pathenol</h3>
+                  <p class="ing__slide-description">Mengunci kelembapan dan memperkuat lapisan kulit</p>
+                </div>
+
+                <div class="swiper-slide ing__slide">
+                  <div class="ing__card-drops drops">
+                    <div class="drop"></div>
+                  </div>
+                  <img src="assets/img/ingredients/mobile/ing-ceramide.webp" alt="Ceramide" class="ing__slide-img" />
+                  <h3 class="ing__slide-title">Ceramide</h3>
+                  <p class="ing__slide-description">Mengunci kelembapan dan memperkuat lapisan kulit</p>
+                </div>
+
+                <div class="swiper-slide ing__slide">
+                  <div class="ing__card-drops drops">
+                    <div class="drop"></div>
+                  </div>
+                  <img src="assets/img/ingredients/mobile/ing-centella-asiatica.webp" alt="Centella Asiatica" class="ing__slide-img" />
+                  <h3 class="ing__slide-title">Centella Asiatica</h3>
+                  <p class="ing__slide-description">Menghidrasi mendalam dan menjaga kelembapan kulit</p>
+                </div>
+
+                <div class="swiper-slide ing__slide">
+                  <div class="ing__card-drops drops">
+                    <div class="drop"></div>
+                  </div>
+                  <img src="assets/img/ingredients/mobile/ing-hyaluronic.webp" alt="Hyaluronic Acid" class="ing__slide-img" />
+                  <h3 class="ing__slide-title">Hyaluronic Acid</h3>
+                  <p class="ing__slide-description">Menghidrasi mendalam dan menjaga kelembapan kulit</p>
+                </div>
+
+                <div class="swiper-slide ing__slide">
+                  <div class="ing__card-drops drops">
+                    <div class="drop"></div>
+                  </div>
+                  <img src="assets/img/ingredients/mobile/ing-allantoin.webp" alt="Allantoin" class="ing__slide-img" />
+                  <h3 class="ing__slide-title">Allantoin</h3>
+                  <p class="ing__slide-description">Melembutkan dan mempercepat regenerasi kulit</p>
+                </div>
+              </div>
+              <!-- Swiper navigation -->
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- DESKTOP ONLY: Grid layout -->
+            <div class="ing__card ing__card--left">
+              <div class="ing__card-list">
+                <div class="ing__item ing__item--pathenol">
+                  <h3 class="ing__item-title">Pathenol</h3>
+                  <p class="ing__item-description">Mengunci kelembapan dan memperkuat lapisan kulit</p>
+                </div>
+                <div class="ing__item ing__item--ceramide">
+                  <h3 class="ing__item-title">Ceramide</h3>
+                  <p class="ing__item-description">Mengunci kelembapan dan memperkuat lapisan kulit</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ing__master">
+              <img src="assets/img/ingredients/desktop/ing-img.webp" alt="ingredients" class="ing__master-img" />
+            </div>
+
+            <div class="ing__card ing__card--right">
+              <div class="ing__card-list">
+                <div class="ing__item ing__item--centella">
+                  <h3 class="ing__item-title">Centella Asiatica</h3>
+                  <p class="ing__item-description">Menghidrasi mendalam dan menjaga kelembapan kulit</p>
+                </div>
+                <div class="ing__item ing__item--hyaluronic">
+                  <h3 class="ing__item-title">Hyaluronic Acid</h3>
+                  <p class="ing__item-description">Menghidrasi mendalam dan menjaga kelembapan kulit</p>
+                </div>
+                <div class="ing__item ing__item--allantoin">
+                  <h3 class="ing__item-title">Allantoin</h3>
+                  <p class="ing__item-description">Melembutkan dan mempercepat regenerasi kulit</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ing__footer">
+              <!-- Fragrance -->
+              <div class="ing__footer-items">
+                <div class="ing__footer-icon">
+                  <img src="assets/img/ingredients/icons/fragrance.webp" alt="fragrance-free" />
+                </div>
+                <div class="ing__footer-text">Fragrance Free</div>
+              </div>
+
+              <!-- Alcohol -->
+              <div class="ing__footer-items">
+                <div class="ing__footer-icon">
+                  <img src="assets/img/ingredients/icons/alcohol.webp" alt="alcohol-free" />
+                </div>
+                <div class="ing__footer-text">Alcohol Free</div>
+              </div>
+
+              <!-- Paraben -->
+              <div class="ing__footer-items">
+                <div class="ing__footer-icon">
+                  <img src="assets/img/ingredients/icons/paraben.webp" alt="paraben-free" />
+                </div>
+                <div class="ing__footer-text">Paraben Free</div>
+              </div>
+
+              <!-- SLS/SLES -->
+              <div class="ing__footer-items">
+                <div class="ing__footer-icon">
+                  <img src="assets/img/ingredients/icons/sls.webp" alt="sls/sles-free" />
+                </div>
+                <div class="ing__footer-text">SLS/SLES Free</div>
+              </div>
+
+              <!-- Cruelty -->
+              <div class="ing__footer-items">
+                <div class="ing__footer-icon">
+                  <img src="assets/img/ingredients/icons/cruelty.webp" alt="cruelty-free" />
+                </div>
+                <div class="ing__footer-text">Cruelty Free</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+        <!-- Decorative SVG Divider -->
+        <div class="products__divider">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="products__container container grid">
+          <div class="products__bedge bedge">OUR ESSENTIALS</div>
+
+          <div class="products__content">
+            <div class="products__text">
+              <h1 class="products__title">
+                3 Langkah, <br />
+                Kulit Lebih Sehat.
+              </h1>
+              <p class="products__description">Sederhana, lembut, efektif</p>
+              <!-- Button desktop only -->
+              <a href="https://shopee.co.id" class="products__btn products__btn--desktop">
+                Lihat di Shoppee
+                <i class="ri-shopping-bag-4-line"></i>
+              </a>
+            </div>
+
+            <!-- MOBILE => Swiper Slide -->
+            <div class="products__slider swiper">
+              <div class="swiper-wrapper">
+                <!-- -> Glow Serum <- -->
+                <div class="swiper-slide products__slide">
+                  <img src="assets/img/Product/glow-serum.webp" alt="glow-serum" class="product__slide-img" />
+                  <div class="products__slide-text">
+                    <h3 class="products__slide-title">Glow Serum</h3>
+                    <p class="products__slide-description">Mencerahkan, melembapkan, dan menenangkan kulit kusam.</p>
+                    <a href="/journal/" class="products__card-btn">
+                      Pelajari lebih lanjut
+                      <i class="ri-arrow-right-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- -> Soft Barrier Moisturizer <- -->
+                <div class="swiper-slide products__slide">
+                  <img src="assets/img/Product/moisturizer.webp" alt="skin-barrier-moisturizer" class="product__slide-img" />
+                  <div class="products__slide-text">
+                    <h3 class="products__slide-title">Soft Barrier Moisturizer</h3>
+                    <p class="products__slide-description">Melembapkan, dan memperkuat skin barrier untuk kulit sehat.</p>
+                    <a href="/journal/" class="products__card-btn">
+                      Pelajari lebih lanjut
+                      <i class="ri-arrow-right-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- -> Gentle Foam Cleanser <- -->
+                <div class="swiper-slide products__slide">
+                  <img src="assets/img/Product/foam-cleanser.webp" alt="gentle-foam-cleanser" class="product__slide-img" />
+                  <div class="products__slide-text">
+                    <h3 class="products__slide-title">Gentle Foam Cleanser</h3>
+                    <p class="products__slide-description">Membersihkan lembut tanpa membuat kulit kering.</p>
+                    <a href="/journal/" class="products__card-btn">
+                      Pelajari lebih lanjut
+                      <i class="ri-arrow-right-long-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- => Swipper Pagination <=  -->
+              <div class="pagination"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- DESKTOP ONLY: grid card -->
+            <div class="products__grid">
+              <div class="products__card">
+                <span class="products__card-number">01</span>
+                <img src="assets/img/Product/glow-serum.webp" alt="glow-serum" class="products__card-img" />
+                <div class="products__card-text">
+                  <h3 class="products__card-title">Glow Serum</h3>
+                  <p class="products__card-desc">Mencerahkan, melembapkan, dan menenangkan kulit kusam.</p>
+                  <a href="/journal/" class="products__card-btn">Pelajari lebih lanjut <i class="ri-arrow-right-long-line"></i></a>
+                </div>
+              </div>
+
+              <div class="products__card">
+                <span class="products__card-number">02</span>
+                <img src="assets/img/Product/moisturizer.webp" alt="moisturizer" class="products__card-img" />
+                <div class="products__card-text">
+                  <h3 class="products__card-title">Soft Barrier Moisturizer</h3>
+                  <p class="products__card-desc">Melembapkan, dan memperkuat skin barrier untuk kulit sehat.</p>
+                  <a href="/journal/" class="products__card-btn">Pelajari lebih lanjut <i class="ri-arrow-right-long-line"></i></a>
+                </div>
+              </div>
+
+              <div class="products__card">
+                <span class="products__card-number">03</span>
+                <img src="assets/img/Product/foam-cleanser.webp" alt="foam-cleanser" class="products__card-img" />
+                <div class="products__card-text">
+                  <h3 class="products__card-title">Gentle Foam Cleanser</h3>
+                  <p class="products__card-desc">Membersihkan lembut tanpa membuat kulit kering.</p>
+                  <a href="/journal/" class="products__card-btn">Pelajari lebih lanjut <i class="ri-arrow-right-long-line"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button mobile only — after slider -->
+            <a href="https://shopee.co.id" class="products__btn products__btn--mobile">
+              Lihat di Shoppee
+              <i class="ri-shopping-bag-4-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="shared-bg">
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonials section" id="testimonial">
+          <div class="testi__container container grid">
+            <div class="testi__content">
+              <!-- Badge, title, desc — desktop only -->
+              <div class="testi__header">
+                <div class="testi__bedge badge">WHAT THEY SAY</div>
+                <h1 class="testi__title">Nyata dari mereka.</h1>
+                <p class="testi__description">
+                  Kulit setiap orang punya cerita. <br />
+                  Ini cerita mereka setelah kembali ke kulit aslinya.
+                </p>
+              </div>
+
+              <!-- MOBILE: Swiper slider -->
+              <div class="testi__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testi__card">
+                    <div class="testi__card-stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="testi__card-quote">"Kulitku yang dulu gampang merah dan kering sekarang jauh lebih tenang. Lumière bener-bener gentle di kulitku!"</p>
+                    <div class="testi__card-profile">
+                      <img src="assets/img/testimonial/nadia.webp" alt="Nadia" class="testi__card-photo" />
+                      <div class="testi__card-info">
+                        <h3 class="testi__card-name">Nadia</h3>
+                        <p class="testi__card-skin">Kulit Sensitif</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide testi__card">
+                    <div class="testi__card-stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="testi__card-quote">"Setelah stop over-treatment pakai Lumière, skin barrierku membaik dan kulit jadi lebih glowing natural."</p>
+                    <div class="testi__card-profile">
+                      <img src="assets/img/testimonial/dinda.webp" alt="Dinda" class="testi__card-photo" />
+                      <div class="testi__card-info">
+                        <h3 class="testi__card-name">Dinda</h3>
+                        <p class="testi__card-skin">Kulit Kombinasi</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide testi__card">
+                    <div class="testi__card-stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="testi__card-quote">"Simpel tapi ngaruh banget! Kulit terasa lembab, halus dan nggak mudah breakout lagi."</p>
+                    <div class="testi__card-profile">
+                      <img src="assets/img/testimonial/citra.webp" alt="Citra" class="testi__card-photo" />
+                      <div class="testi__card-info">
+                        <h3 class="testi__card-name">Citra</h3>
+                        <p class="testi__card-skin">Kulit Berminyak</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- DESKTOP: grid card -->
+              <div class="testi__grid">
+                <div class="testi__card testi__desktop">
+                  <div class="testi__card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="testi__card-quote">"Kulitku yang dulu gampang merah dan kering sekarang jauh lebih tenang. Lumière bener-bener gentle di kulitku!"</p>
+                  <div class="testi__card-profile">
+                    <img src="assets/img/testimonial/nadia.webp" alt="Nadia" class="testi__card-photo" />
+                    <div class="testi__card-info">
+                      <h3 class="testi__card-name">Nadia</h3>
+                      <p class="testi__card-skin">Kulit Sensitif</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testi__card testi__desktop">
+                  <div class="testi__card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="testi__card-quote">"Setelah stop over-treatment pakai Lumière, skin barrierku membaik dan kulit jadi lebih glowing natural."</p>
+                  <div class="testi__card-profile">
+                    <img src="assets/img/testimonial/dinda.webp" alt="Dinda" class="testi__card-photo" />
+                    <div class="testi__card-info">
+                      <h3 class="testi__card-name">Dinda</h3>
+                      <p class="testi__card-skin">Kulit Kombinasi</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testi__card testi__desktop">
+                  <div class="testi__card-stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                  <p class="testi__card-quote">"Simpel tapi ngaruh banget! Kulit terasa lembab, halus dan nggak mudah breakout lagi."</p>
+                  <div class="testi__card-profile">
+                    <img src="assets/img/testimonial/citra.webp" alt="Citra" class="testi__card-photo" />
+                    <div class="testi__card-info">
+                      <h3 class="testi__card-name">Rara</h3>
+                      <p class="testi__card-skin">Kulit Berminyak</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--==================== BRIDGE ====================-->
+        <section class="bridge section" id="bridge">
+          <div class="bridge__container container grid">
+            <div class="bridge__content">
+              <h1 class="bridge__title">
+                Skin yang sehat, <br />
+                percaya diri kamu.
+              </h1>
+              <p class="bridge__description">Lumière — gentle care for your real skin.</p>
+            </div>
+            <div class="bridge__cta">
+              <a href="https://shopee.co.id" class="bridge__btn">Kunjungi Shoppee <i class="ri-shopping-bag-4-line"></i></a>
+              <a href="https://www.instagram.com/" class="bridge__btn bridge__btn--ghost">Follow Instagram <i class="ri-instagram-line"></i></a>
+            </div>
+          </div>
+        </section>
+        <!-- =========== Footer Desktop only =========== -->
+        <section class="footer footer-desktop" id="footer">
+          <div class="footer__container container grid">
+            <div class="footer__copyright">
+              <div class="footer__year">&#169; <span id="footer-year"></span></div>
+              <div class="footer__copy">Lumière. All Rights Reserved</div>
+            </div>
+            <div class="footer__menu" id="footer-menu">
+              <ul class="footer__list">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#ingredients" class="footer__link">Ingredients</a></li>
+                <li><a href="#products" class="footer__link">Products</a></li>
+                <li><a href="/journal/" class="footer__link">Journal</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--==================== JOURNAL ====================-->
+      <section class="journal section" id="journal">
+        <div class="journal__container container grid">
+          <div class="journal__bedge bedge">JOURNAL</div>
+          <div class="journal__content">
+            <div class="journal__text">
+              <h1 class="journal__title">
+                Belajar bareng, <br />
+                rawat kulit aslimu.
+              </h1>
+            </div>
+
+            <div class="journal__cards">
+              <!-- ||====|| Card 01 ||====|| -->
+              <div class="journal__card">
+                <div class="card__img-1"></div>
+                <div class="journal__card-desc">
+                  <h1 class="card__text">Kenali Tanda Skin Barrier Rusak Dan Cara Memperbaikinya</h1>
+                  <a href="/journal/" class="journal__card-btn">
+                    Pelajari lebih lanjut
+                    <i class="ri-arrow-right-long-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ||====|| Card 02 ||====|| -->
+              <div class="journal__card">
+                <div class="card__img-2"></div>
+                <div class="journal__card-desc">
+                  <h1 class="card__text">Kenapa Kulit Sensitif Butuh Formula Yang Lebih Lanjut?</h1>
+                  <a href="/journal/" class="journal__card-btn">
+                    Pelajari lebih lanjut
+                    <i class="ri-arrow-right-long-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ||====|| Card 03 ||====|| -->
+              <div class="journal__card">
+                <div class="card__img-3"></div>
+                <div class="journal__card-desc">
+                  <h1 class="card__text">5 Ingredients Yang Terbukti Menenangkan Kulit Iritasi</h1>
+                  <a href="/journal/" class="journal__card-btn">
+                    Pelajari lebih lanjut
+                    <i class="ri-arrow-right-long-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="journal__cta">
+              <a href="/journal/" class="journal-btn">Lihat Semua Artikel</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <!-- placeholder -->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer-mobile" id="footer">
+      <div class="footer__container-mobile container grid">
+        <div class="footer__head">
+          <div class="footer__title">LUMIÈRE</div>
+          <p class="footer__description">Skincare minimalis dengan formula lembut untuk kulit yang over-treated.</p>
+          <div class="footer__icons">
+            <a class="footer-icons" href="https://www.instagram.com/">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a class="footer-icons" href="https://shopee.co.id">
+              <i class="ri-shopping-bag-4-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__menu-mobile" id="footer-menu">
+          <ul class="footer__list-mobile">
+            <li><a href="#" style="pointer-events: none" class="footer-span">Menu</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#ingredients" class="footer__link">Ingredients</a></li>
+            <li><a href="#products" class="footer__link">Products</a></li>
+            <li><a href="#journal" class="footer__link">Journal</a></li>
+          </ul>
+          <ul class="footer__list-mobile">
+            <li><a href="#" style="pointer-events: none" class="footer-span">Support</a></li>
+            <li><a href="#" style="pointer-events: none" class="footer-help">FAQ</a></li>
+            <li><a href="#" style="pointer-events: none" class="footer-help">Contact</a></li>
+            <li><a href="#" style="pointer-events: none" class="footer-help">Privacy Policy</a></li>
+            <li><a href="#" style="pointer-events: none" class="footer-help">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright-mobile">
+          <div class="footer-year-mobile">&#169; <span id="footer-year-mobile"></span></div>
+          <div class="footer-copy-mobile">Lumière. All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/script/scrollreveal.min.js"></script>
+
+    <!--=============== ANIME JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/script/main.js"></script>
+    <!-- taruh sebelum </body> -->
+  </body>
+</html>
