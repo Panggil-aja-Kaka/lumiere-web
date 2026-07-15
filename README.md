@@ -69,8 +69,12 @@ lumiere-web/
 ---
 
 ## Live Demo
-<a href=""><img src="https://img.shields.io/badge/%F0%9F%94%97%20See%20preview%20here-blue?style=plastic&logoSize=auto&labelColor=grey&color=%238beb73
+
+<div>
+<a href="https://lumiere-website.netlify.app/"><img src="https://img.shields.io/badge/%F0%9F%94%97%20See%20preview%20here-blue?style=plastic&logoSize=auto&labelColor=grey&color=%238beb73
 "></a>
+
+</div>
 
 ---
 
