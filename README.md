@@ -1,11 +1,16 @@
+<div align="center">
+  
 # Lumière — Skincare Brand Website
-
-> A freelance simulation project — fictional skincare brand built as a frontend portfolio piece.
 
 ![HTML](https://img.shields.io/badge/Html5-blue?style=plastic&logo=html5&logoSize=auto&labelColor=grey&color=%238beb73)
 ![CSS](https://img.shields.io/badge/Css%203-blue?style=plastic&logo=css&logoSize=auto&labelColor=grey&color=%238beb73)
 ![JavaScript](https://img.shields.io/badge/JavaScript-blue?style=plastic&logo=javascript&logoSize=auto&labelColor=grey&color=%238beb73)
 
+</div>
+
+---
+
+> A freelance simulation project — fictional skincare brand built as a frontend portfolio piece.
 ---
 
 ## Overview
@@ -67,10 +72,26 @@ lumiere-web/
 ```
 
 ---
+## Preview
+- Mobile version:
+
+![preview](https://raw.githubusercontent.com/Panggil-aja-Kaka/lumiere-web/main/preview-mobile.png)
+
+- Desktop version:
+
+![preview](https://raw.githubusercontent.com/Panggil-aja-Kaka/lumiere-web/main/preview-desktop.png)
+
+
+---
 
 ## Live Demo
-<a href=""><img src="https://img.shields.io/badge/%F0%9F%94%97%20See%20preview%20here-blue?style=plastic&logoSize=auto&labelColor=grey&color=%238beb73
-"></a>
+<div>
+  <a href="https://lumiere-website.netlify.app/">
+    <img src="https://img.shields.io/badge/%F0%9F%94%97%20See%20preview%20here-blue?style=plastic&logoSize=auto&labelColor=grey&color=%238beb73
+">
+  </a>
+</div>
+
 
 ---
 
@@ -103,4 +124,5 @@ Frontend Developer
 _Built with curiosity, debugged with patience, shipped from an Android phone. 📱_
 
 </div>
+
 ---
